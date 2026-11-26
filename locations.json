@@ -1,0 +1,279 @@
+{
+  "_about": "Canonical registry of the 14 official campus locations (IDs, names, colours, coordinates). Loaded into SQLite on first run.",
+  "map": {
+    "map_image": "campus_map.png",
+    "annotated_image": "annotated_campus_map.png",
+    "latest_annotated_image": "latest_annotated_campus_map.png",
+    "width_px": 944,
+    "height_px": 1472,
+    "coordinate_system": "x = % of map width from the left edge, y = % of map height from the top edge (0-100), measured on the cropped original map (944 x 1472 px)"
+  },
+  "locations": [
+    {
+      "building_id": "eng_bldg_1",
+      "legend_number": 1,
+      "building_name": "Engineering Bldg. 1 (Quadrangle)",
+      "short_name": "Eng'g Bldg. 1",
+      "building_color": "#2F7D32",
+      "aliases": [
+        "Engineering Building 1",
+        "Eng 1",
+        "Eng1",
+        "EB1",
+        "Quadrangle",
+        "Quad"
+      ],
+      "plan_label": "Engineering Building 1",
+      "x_percent": 45.18,
+      "y_percent": 41.09,
+      "brief_x_percent": 45.69,
+      "brief_y_percent": 41.14,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "eng_bldg_2",
+      "legend_number": 2,
+      "building_name": "Engineering Bldg. 2",
+      "short_name": "Eng'g Bldg. 2",
+      "building_color": "#1B3A7A",
+      "aliases": [
+        "Engineering Building 2",
+        "Eng 2",
+        "Eng2",
+        "EB2"
+      ],
+      "plan_label": "Engineering Building 2",
+      "x_percent": 35.32,
+      "y_percent": 69.89,
+      "brief_x_percent": 35.88,
+      "brief_y_percent": 70.56,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "acad_bldg_1",
+      "legend_number": 3,
+      "building_name": "Acad Bldg. 1",
+      "short_name": "Acad Bldg. 1",
+      "building_color": "#00887A",
+      "aliases": [
+        "Academic Building 1",
+        "Acad 1",
+        "AB1"
+      ],
+      "plan_label": "Academic Building 1",
+      "x_percent": 23.04,
+      "y_percent": 62.44,
+      "brief_x_percent": 23.95,
+      "brief_y_percent": 62.44,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "acad_bldg_2_sas",
+      "legend_number": 4,
+      "building_name": "Acad Bldg. 2 (SAS)",
+      "short_name": "Acad Bldg. 2",
+      "building_color": "#7A1FA2",
+      "aliases": [
+        "Academic Building 2",
+        "Acad 2",
+        "AB2",
+        "SAS"
+      ],
+      "plan_label": "Academic Building 2",
+      "x_percent": 22.77,
+      "y_percent": 47.81,
+      "brief_x_percent": 23.68,
+      "brief_y_percent": 47.94,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "college_arts_education",
+      "legend_number": 5,
+      "building_name": "College of Arts and Education Bldg.",
+      "short_name": "CAE Bldg.",
+      "building_color": "#D81A60",
+      "aliases": [
+        "Arts and Education",
+        "CAE",
+        "College of Arts"
+      ],
+      "plan_label": "School of Advanced Studies",
+      "x_percent": 31.17,
+      "y_percent": 89.54,
+      "brief_x_percent": 31.59,
+      "brief_y_percent": 89.55,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "new_engineering_bldg",
+      "legend_number": 6,
+      "building_name": "New Engineering Bldg.",
+      "short_name": "New Eng'g Bldg.",
+      "building_color": "#F67C01",
+      "aliases": [
+        "New Engineering Building",
+        "New Eng",
+        "NEB"
+      ],
+      "plan_label": "New Engineering Bldg. (under constn)",
+      "x_percent": 23.07,
+      "y_percent": 86.49,
+      "brief_x_percent": 23.93,
+      "brief_y_percent": 86.46,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "engineering_research_bldg",
+      "legend_number": 7,
+      "building_name": "Engineering Research Bldg.",
+      "short_name": "Eng'g Research",
+      "building_color": "#6D4D42",
+      "aliases": [
+        "New Engineering Research Bldg",
+        "Research Building",
+        "ERB"
+      ],
+      "plan_label": "New Engineering Research Bldg. (under constn)",
+      "x_percent": 81.09,
+      "y_percent": 36.45,
+      "brief_x_percent": 80.69,
+      "brief_y_percent": 36.32,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "ptbi",
+      "legend_number": 8,
+      "building_name": "PTBI",
+      "short_name": "PTBI",
+      "building_color": "#FAC02E",
+      "aliases": [
+        "PBTI",
+        "TBI"
+      ],
+      "plan_label": "PTBI",
+      "x_percent": 64.78,
+      "y_percent": 34.54,
+      "brief_x_percent": 64.74,
+      "brief_y_percent": 34.43,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "school_canteen",
+      "legend_number": 9,
+      "building_name": "School Canteen",
+      "short_name": "Canteen",
+      "building_color": "#D32F2E",
+      "aliases": [
+        "Canteen",
+        "Cafeteria"
+      ],
+      "plan_label": "School Canteen",
+      "x_percent": 56.2,
+      "y_percent": 23.67,
+      "brief_x_percent": 56.4,
+      "brief_y_percent": 23.86,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "teachers_education",
+      "legend_number": 10,
+      "building_name": "Teacher's Education",
+      "short_name": "Teacher's Ed.",
+      "building_color": "#28B6F6",
+      "aliases": [
+        "Teachers Education",
+        "Education Bldg",
+        "TEd"
+      ],
+      "plan_label": "Education Bldg.",
+      "x_percent": 46.57,
+      "y_percent": 25.34,
+      "brief_x_percent": 46.91,
+      "brief_y_percent": 25.48,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "dost",
+      "legend_number": 11,
+      "building_name": "DOST",
+      "short_name": "DOST",
+      "building_color": "#9CCC66",
+      "aliases": [
+        "Department of Science and Technology"
+      ],
+      "plan_label": null,
+      "x_percent": 50.26,
+      "y_percent": 32.17,
+      "brief_x_percent": 50.71,
+      "brief_y_percent": 32.31,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "amphitheater",
+      "legend_number": 12,
+      "building_name": "Amphitheater",
+      "short_name": "Amphitheater",
+      "building_color": "#757575",
+      "aliases": [
+        "Amphi",
+        "Student Center"
+      ],
+      "plan_label": "Student Center (pending constn)",
+      "x_percent": 83.62,
+      "y_percent": 21.05,
+      "brief_x_percent": 83.21,
+      "brief_y_percent": 21.09,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "sac",
+      "legend_number": 13,
+      "building_name": "Student's Activity Center (SAC)",
+      "short_name": "SAC",
+      "building_color": "#817716",
+      "aliases": [
+        "Student Activity Center",
+        "Students Activity Center",
+        "SAC"
+      ],
+      "plan_label": "Students Activity Center",
+      "x_percent": 64.46,
+      "y_percent": 21.77,
+      "brief_x_percent": 64.55,
+      "brief_y_percent": 21.82,
+      "coordinate_source": "Centroid of the building's legend colour on the cropped original map",
+      "type": "building"
+    },
+    {
+      "building_id": "main_gate",
+      "legend_number": 14,
+      "building_name": "Main Gate",
+      "short_name": "Main Gate",
+      "building_color": "#000000",
+      "aliases": [
+        "Gate",
+        "Entrance",
+        "Main Entrance"
+      ],
+      "plan_label": null,
+      "x_percent": 23.07,
+      "y_percent": 72.15,
+      "brief_x_percent": 22.45,
+      "brief_y_percent": 72.44,
+      "coordinate_source": "Red dot on the annotated map (aligned to the original map)",
+      "type": "gate"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Only needed for prepare_map.py (rebuilding the map images / --audit).
+# The website itself runs with requirements.txt alone.
+Pillow>=10.0
+numpy>=1.24
+scipy>=1.10

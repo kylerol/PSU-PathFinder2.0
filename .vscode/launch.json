@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PSU PathFinder: run website (http://127.0.0.1:5000)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "FLASK_DEBUG": "0" },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "PSU PathFinder: run website for phones on the same Wi-Fi (--lan)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "args": ["--lan"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "PSU PathFinder: Excel data report",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/data_loader.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "PSU PathFinder: all tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests", "-q"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

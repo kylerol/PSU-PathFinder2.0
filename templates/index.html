@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0033cc">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="PathFinder">
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/icon-192.png') }}">
+  <title>PSU PathFinder · Campus Navigation</title>
+  <meta name="description" content="Campus navigation and shortest-path website for Pangasinan State University – Urdaneta Campus.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ffdd00'/%3E%3Cpath d='M16 6a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' fill='%230033cc'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#navigate">Skip to the campus map</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#home" aria-label="PSU PathFinder home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/></svg>
+      </span>
+      <span class="brand-text"><strong>PSU PathFinder</strong><small>Urdaneta Campus</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#navigate" data-nav="navigate">Campus Map</a>
+      <a href="#about" data-nav="about">About Project</a>
+      <a href="#team" data-nav="team">Our Team</a>
+      <a href="#history" data-nav="history">Route History</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============================== HOME ============================== -->
+  <section id="home" class="hero">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="badge">Data Structures &amp; Algorithms · Final Project</span>
+        <h1>Find the shortest walk <span class="accent">across campus</span></h1>
+        <p class="lead">PSU PathFinder is a campus navigation website for Pangasinan State University – Urdaneta Campus.
+          It shows the actual campus map with its buildings, possible entrances, original walkways and alternative walking
+          paths, and finds the shortest measured walking route between any two of the 14 official locations with
+          Dijkstra's algorithm.</p>
+        <p class="hero-sub">Choose where you are and where you need to go. The route is drawn along the campus walkways,
+          never through a building, together with the total distance and an estimated walking time.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#navigate" id="startNavBtn">Start Navigation</a>
+          <a class="btn btn-ghost btn-lg" href="#about">How it works</a>
+        </div>
+        <dl class="hero-stats" id="heroStats">
+          <div><dt>Locations</dt><dd data-stat="buildings">14</dd></div>
+          <div><dt>Measured pairs</dt><dd data-stat="pairs">91</dd></div>
+          <div><dt>Possible entrances</dt><dd data-stat="entrances">17</dd></div>
+          <div><dt>Walkway segments</dt><dd data-stat="segments">–</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-preview">
+        <div class="preview-frame">
+          <img src="{{ url_for('static', filename='images/campus_map.png') }}" alt="Pangasinan State University Urdaneta Campus map" loading="eager">
+          <span class="preview-pin pin-a" data-building="main_gate" hidden>A</span>
+          <span class="preview-pin pin-b" data-building="ptbi" hidden>B</span>
+        </div>
+        <figcaption>The actual campus map is the navigation background. Pins: Main Gate → PTBI.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================== NAVIGATE ============================== -->
+  <section id="navigate" class="navigate" aria-label="Campus navigation">
+    <!-- phones: the map opens full-screen from this card -->
+    <div class="m-open">
+      <img src="{{ url_for('static', filename='images/campus_map.png') }}" alt="" loading="lazy">
+      <div>
+        <h2>Campus map</h2>
+        <p>Full-screen map with search, shortest routes and walking directions.</p>
+        <button class="btn btn-primary" type="button" data-open-map>Open the campus map</button>
+      </div>
+    </div>
+
+    <!-- phones: floating search bar (Google-Maps style) -->
+    <div class="m-topbar" id="mTopbar">
+      <button class="m-icon" id="mBack" type="button" aria-label="Close the map">‹</button>
+      <div class="m-search-slot" id="mSearchSlot"></div>
+      <button class="m-icon menu" id="mMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mMenu">☰</button>
+      <nav class="m-menu" id="mMenu" aria-label="Pages" hidden>
+        <a href="#home">Home</a>
+        <a href="#about">About Project</a>
+        <a href="#team">Our Team</a>
+        <a href="#history">Route History</a>
+      </nav>
+    </div>
+
+    <div class="nav-grid">
+      <!-- -------- side panel -------- -->
+      <aside class="panel" id="panel" aria-label="Route planner">
+        <div class="sheet-handle" id="sheetHandle" role="button" tabindex="0" aria-label="Drag or tap to resize the route panel" aria-expanded="true"><span></span></div>
+        <div class="panel-scroll">
+          <div class="card planner">
+            <h2>Plan your route</h2>
+            <div class="search" id="searchBox" role="search">
+              <label class="sr-only" for="searchInput">Search a building</label>
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+              <input id="searchInput" type="search" autocomplete="off" placeholder="Search a building (e.g. quad, canteen, PTBI)"
+                     role="combobox" aria-expanded="false" aria-controls="searchList" aria-autocomplete="list">
+              <ul id="searchList" class="search-list" role="listbox" hidden></ul>
+            </div>
+
+            <div class="route-fields">
+              <label class="field">
+                <span class="field-dot start-dot" aria-hidden="true"></span>
+                <span class="field-body"><small>Starting location</small>
+                  <select id="startSelect" aria-label="Starting location"></select></span>
+              </label>
+              <button class="swap" id="swapBtn" type="button" title="Swap start and destination" aria-label="Swap start and destination">⇅</button>
+              <label class="field">
+                <span class="field-dot end-dot" aria-hidden="true"></span>
+                <span class="field-body"><small>Destination</small>
+                  <select id="destSelect" aria-label="Destination"></select></span>
+              </label>
+            </div>
+            <label class="check"><input type="checkbox" id="excludeFlagged"> Ignore measurements flagged for verification</label>
+            <div class="planner-actions">
+              <button class="btn btn-primary" id="findBtn" type="button">Find Shortest Route</button>
+              <button class="btn btn-outline" id="resetBtn" type="button">Reset</button>
+            </div>
+          </div>
+
+          <!-- selected building / entrance / path info -->
+          <div class="card info" id="infoCard" hidden>
+            <button class="close" id="infoClose" type="button" aria-label="Close details">×</button>
+            <div id="infoBody"></div>
+          </div>
+
+          <!-- route result -->
+          <div class="card result" id="resultCard" hidden aria-live="polite">
+            <div class="result-head" id="resultHead">
+              <div>
+                <small class="eyebrow">Shortest measured walk</small>
+                <div class="distance"><span id="resultDistance">–</span><small> m</small></div>
+                <div class="walk-time" id="resultTime"></div>
+              </div>
+              <span class="geo-badge" id="geoBadge">traced</span>
+            </div>
+            <ol class="stops" id="resultStops"></ol>
+            <p class="result-desc" id="resultDirect"></p>
+            <div id="resultWarnings"></div>
+            <div id="resultLegs"></div>
+            <details class="algo">
+              <summary>How Dijkstra found it</summary>
+              <div id="algoStats"></div>
+            </details>
+            <p class="fine" id="geoExplain"></p>
+          </div>
+
+          <!-- legend -->
+          <div class="card legend" id="legendCard">
+            <h3>Map legend</h3>
+            <ul class="legend-list">
+              <li><label><input type="checkbox" data-layer="buildings" checked><span class="lg lg-building"></span>Building locations (14)</label></li>
+              <li><label><input type="checkbox" data-layer="gate" checked><span class="lg lg-gate"></span>Main Gate</label></li>
+              <li><label><input type="checkbox" data-layer="entrances" checked><span class="lg lg-entrance"></span>Possible building entrances</label></li>
+              <li><label><input type="checkbox" data-layer="walkways" checked><span class="lg lg-walkway"></span>Original campus walkways (purple)</label></li>
+              <li><label><input type="checkbox" data-layer="alternatives" checked><span class="lg lg-alt"></span>Alternative walking paths (orange)</label></li>
+              <li class="static sub"><span class="lg lg-alt-unverified"></span>Quadrangle alternative path (orange dashed) – unverified, not used for routing</li>
+              <li><label><input type="checkbox" data-layer="footprints"><span class="lg lg-footprint"></span>Building footprints (no-walk areas)</label></li>
+              <li><label><input type="checkbox" data-layer="labels"><span class="lg lg-label">Aa</span>Show all building names</label></li>
+              <li class="static"><span class="lg lg-start">A</span>Selected starting location</li>
+              <li class="static"><span class="lg lg-dest">B</span>Selected destination</li>
+              <li class="static"><span class="lg lg-route"></span>Calculated walking route</li>
+              <li class="static"><span class="lg lg-route-dash"></span>Route part across a lawn (inferred)</li>
+            </ul>
+            <h4>Buildings</h4>
+            <ul class="building-key" id="buildingKey"></ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- -------- map -------- -->
+      <div class="map-area">
+        <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="Interactive campus map. Drag to pan, use the plus and minus buttons to zoom.">
+          <div class="map-inner" id="mapInner">
+            <img class="map-image" id="mapImage" src="{{ url_for('static', filename='images/campus_map.png') }}" alt="Campus map of PSU Urdaneta" draggable="false">
+            <img class="map-image map-plan" id="latestImage" src="{{ url_for('static', filename='images/latest_annotated_campus_map.png') }}" alt="" draggable="false" hidden loading="lazy">
+            <img class="map-image map-plan" id="planImage" src="{{ url_for('static', filename='images/annotated_campus_map.png') }}" alt="" draggable="false" hidden loading="lazy">
+            <svg class="map-svg" id="mapSvg" viewBox="0 0 944 1472" preserveAspectRatio="none" aria-hidden="true">
+              <g id="layerFootprints" class="layer-footprints"></g>
+              <g id="layerWalkways" class="layer-walkways"></g>
+              <g id="layerAlternatives" class="layer-alternatives"></g>
+              <g id="layerRoute" class="layer-route"></g>
+            </svg>
+            <div class="marker-layer" id="markerLayer"></div>
+          </div>
+        </div>
+        <div class="map-controls" role="toolbar" aria-label="Map controls">
+          <button type="button" id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button>
+          <button type="button" id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button>
+          <button type="button" id="zoomFit" title="Fit the whole campus" aria-label="Fit the whole campus">⤢</button>
+          <button type="button" id="planToggle" class="text" title="Switch background: original map / latest annotated map / earlier annotated map" aria-pressed="false">Latest</button>
+        </div>
+        <div class="map-hint" id="mapHint">Drag to pan · Ctrl + scroll to zoom · Click a building for details</div>
+        <div class="compass" aria-hidden="true">N</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== HISTORY ============================== -->
+  <section id="history" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Saved in SQLite</span>
+          <h2>Route history</h2>
+          <p class="muted">Every successful search is stored in <code>instance/psu_pathfinder.db</code>, so it is still here after the website restarts.</p>
+        </div>
+        <div class="section-actions">
+          <button class="btn btn-outline" id="refreshHistory" type="button">Refresh</button>
+          <button class="btn btn-danger" id="clearHistory" type="button">Clear history</button>
+        </div>
+      </div>
+      <div class="history-list" id="historyList"><p class="muted">Loading…</p></div>
+    </div>
+  </section>
+
+  <!-- ============================== ABOUT PROJECT ============================== -->
+  <section id="about" class="section section-alt">
+    <div class="wrap">
+      <span class="eyebrow">About the project</span>
+      <h2>PSU PathFinder: A Campus Navigation and Shortest-Path Optimization System</h2>
+
+      <!-- 1. overview -->
+      <p class="lead dark">PSU PathFinder is a web-based campus navigation system for Pangasinan State University – Urdaneta Campus.
+        It is the final project of Group 3 in Data Structures and Algorithms (Computer Engineering) and applies graphs,
+        a min-heap priority queue and Dijkstra's shortest-path algorithm to a real navigation problem on our own campus.</p>
+
+      <div class="about-grid">
+        <!-- 2. detailed purpose -->
+        <article class="about-card wide">
+          <h3>Purpose</h3>
+          <p>PSU PathFinder was developed to give students and visitors an accessible way to locate buildings and facilities
+            within Pangasinan State University – Urdaneta Campus. Freshmen, transferees and other people who are unfamiliar
+            with the campus layout often have to ask for directions or spend extra time looking for a classroom, laboratory
+            or office.</p>
+          <p>The website provides a digital representation of the campus buildings, their possible entrances, the original
+            campus walkways and the available alternative walking paths. Through graph data structures and Dijkstra's
+            algorithm it determines the shortest available route from the walking distances the group measured. A min-heap
+            priority queue (Python <code>heapq</code>) selects the next closest location during the search, and dictionaries
+            give fast look-up of locations, distances and previous stops. SQLite stores the campus information, walkway
+            data, route measurements and the navigation history.</p>
+          <p>PSU PathFinder does not use live GPS tracking. Its navigation is based on predefined campus data that the
+            proponents prepared and validated.</p>
+        </article>
+
+        <!-- 3. objectives -->
+        <article class="about-card">
+          <h3>Main objectives</h3>
+          <ol class="plain numbered">
+            <li>Represent the campus digitally with its actual map, official building locations, original walkways and alternative walking paths.</li>
+            <li>Implement a weighted graph and Dijkstra's algorithm in Python to find the shortest available route between two locations.</li>
+            <li>Use a min-heap priority queue and dictionary look-up for efficient route calculation and location search.</li>
+            <li>Build a responsive website with Flask, HTML, CSS, JavaScript and SQLite that shows campus information, routes and distances.</li>
+            <li>Publish the website through GitHub and Render so it can be opened online.</li>
+          </ol>
+        </article>
+
+        <!-- 4. technologies -->
+        <article class="about-card">
+          <h3>Technologies used</h3>
+          <ul class="tags"><li>Python</li><li>Flask</li><li>SQLite (sqlite3)</li><li>heapq</li><li>openpyxl</li><li>HTML5</li>
+            <li>CSS3</li><li>Vanilla JavaScript</li><li>SVG</li><li>Git &amp; GitHub</li><li>Render</li><li>Gunicorn</li></ul>
+          <h4>Data structures</h4>
+          <ul class="plain">
+            <li><b>Weighted graph</b> stored as an adjacency list (<code>dict</code> of vertex → edges)</li>
+            <li><b>Min-heap priority queue</b> – Python <code>heapq</code></li>
+            <li><b>Hash tables</b> – <code>dict</code> for distances, predecessors and name/ID look-up</li>
+            <li><b>Set</b> – vertices whose shortest distance is final</li>
+          </ul>
+        </article>
+
+        <!-- 5. how it works -->
+        <article class="about-card wide">
+          <h3>How the navigation system works</h3>
+          <ol class="plain numbered">
+            <li><b>Campus data.</b> The 14 official locations, 17 possible entrances, the walkway network and the building
+              footprints are traced on the original campus map and the annotated maps, then stored in SQLite. Purple lines
+              on the latest annotated map are <span class="t-purple">original campus walkways</span>; orange lines are
+              <span class="t-orange">alternative walking paths</span>. The two are never merged.</li>
+            <li><b>Measured distances.</b> The building-to-building walking distances come from the group's Excel workbook
+              (91 pairs). A missing or "N/A" value stays empty; no distance is guessed.</li>
+            <li><b>Shortest distance.</b> Dijkstra's algorithm runs on the building graph weighted by those measured metres.
+              This gives the total distance and the order of stops.</li>
+            <li><b>Route line.</b> A second Dijkstra search on the traced walkway graph chooses which walkway line to draw
+              for each part of the route. Every line is checked against all building footprints and is rejected if it
+              would pass through a building.</li>
+            <li><b>Result.</b> Flask returns the result as JSON; the page only draws what the server calculated and saves
+              the search in the route history.</li>
+          </ol>
+          <p class="muted">The new orange Quadrangle path is drawn over Engineering Bldg. 1, so it is shown on the map but
+            is not used for routing until the corridor is confirmed walkable and its length is measured.</p>
+        </article>
+
+        <!-- 6. access anywhere -->
+        <article class="about-card full access-card" id="access">
+          <h3>Accessing PSU PathFinder anywhere</h3>
+          {% if public_url %}
+          <p>PSU PathFinder is deployed through Render, allowing students, teachers, staff, and visitors to access the campus
+            navigation website from anywhere with an internet connection. Users can open the public website using a browser
+            without needing the proponents' personal computers to remain switched on.</p>
+          <p class="access-url">Public website: <a href="{{ public_url }}" rel="noopener">{{ public_url }}</a></p>
+          {% else %}
+          <p>PSU PathFinder is being prepared for deployment through Render. Once it is online, students, teachers, staff, and
+            visitors will be able to access the campus navigation website from anywhere with an internet connection, using a
+            browser, without needing the proponents' personal computers to remain switched on.</p>
+          <p class="access-url pending">Online deployment is still in progress. The public Render address will appear here
+            once the website is running on Render.</p>
+          {% endif %}
+          <p class="muted">Render hosts the website; it does not provide GPS or location tracking. The route history is kept
+            in SQLite on Render's persistent disk so it survives restarts and redeployments.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OUR TEAM ============================== -->
+  <section id="team" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Our proponents</span>
+      <h2>Our Proponents · Group 3</h2>
+      <p class="lead dark">PSU PathFinder was proposed and developed by five second-year Computer Engineering students of the
+        College of Engineering and Architecture, Pangasinan State University – Urdaneta Campus, for the course Data
+        Structures and Algorithms.</p>
+      <div class="team-layout">
+        <ul class="team-gallery" aria-label="Proponent portraits from the approved project proposal">
+          {% for photo in proponent_photos %}
+          <li class="team-photo">
+            <img src="{{ url_for('static', filename=photo) }}" alt="Proponent portrait {{ loop.index }} of 5 from the approved proposal"
+                 loading="lazy" width="200" height="220">
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="team-roster">
+          <h3>Proponents</h3>
+          <ol class="plain numbered">
+            {% for name in proponents %}<li>{{ name }}</li>{% endfor %}
+          </ol>
+          <p class="muted">Portraits are taken from the "Brief Profile of Proponents" section of the approved title proposal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>PSU PathFinder · Pangasinan State University – Urdaneta Campus</span>
+    <span>Data Structures and Algorithms · Group 3 · no GPS or external map services</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

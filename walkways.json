@@ -1,0 +1,2482 @@
+{
+  "_about": "Walkway network: original walkways = light paved roads traced from the original map + PURPLE strokes of the latest annotated map; alternative walkways = ORANGE strokes. distance_m is NULL because no segment has been measured on site; length_map_px is only used to choose which traced line to draw.",
+  "nodes": [
+    {
+      "node_id": "n_main_gate",
+      "node_name": "Main Gate",
+      "node_type": "main_gate_connection",
+      "verification_status": "annotated_red_dot",
+      "building_id": "main_gate",
+      "x_percent": 23.07,
+      "y_percent": 72.15
+    },
+    {
+      "node_id": "j_gate_plaza",
+      "node_name": "Gate plaza junction",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 28.07,
+      "y_percent": 72.96
+    },
+    {
+      "node_id": "j_road_op1_south",
+      "node_name": "Main road – orange path (Acad 1) south link",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 29.87,
+      "y_percent": 70.65
+    },
+    {
+      "node_id": "j_road_acad_east",
+      "node_name": "Main road – path between Acad Bldg. 1 and 2",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 32.42,
+      "y_percent": 56.79
+    },
+    {
+      "node_id": "j_road_plaza",
+      "node_name": "Main road – plaza west of Eng'g Bldg. 1",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 31.36,
+      "y_percent": 48.37
+    },
+    {
+      "node_id": "j_road_eng1_west",
+      "node_name": "Main road beside Eng'g Bldg. 1 west entrance",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 30.93,
+      "y_percent": 42.66
+    },
+    {
+      "node_id": "j_road_side_gate",
+      "node_name": "Main road – highway-side gate branch",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 33.26,
+      "y_percent": 34.65
+    },
+    {
+      "node_id": "n_side_gate",
+      "node_name": "Highway-side gate (labelled \"GATE\" on the plan)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 27.86,
+      "y_percent": 33.49
+    },
+    {
+      "node_id": "j_road_teachers",
+      "node_name": "Loop road at Teacher's Education",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 49.05,
+      "y_percent": 28.19
+    },
+    {
+      "node_id": "j_road_dost",
+      "node_name": "Loop road at DOST",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 50.64,
+      "y_percent": 28.19
+    },
+    {
+      "node_id": "j_road_ne",
+      "node_name": "North-east junction (north road / PTBI road)",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 55.61,
+      "y_percent": 28.06
+    },
+    {
+      "node_id": "f_canteen",
+      "node_name": "Loop road in front of the School Canteen",
+      "node_type": "building_frontage",
+      "verification_status": "traced_from_map",
+      "building_id": "school_canteen",
+      "x_percent": 57.31,
+      "y_percent": 26.83
+    },
+    {
+      "node_id": "j_road_sac",
+      "node_name": "Loop road at SAC",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 64.51,
+      "y_percent": 26.7
+    },
+    {
+      "node_id": "j_road_north_end",
+      "node_name": "End of north road (lawn lane start)",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 72.03,
+      "y_percent": 26.43
+    },
+    {
+      "node_id": "j_road_eng1_ne",
+      "node_name": "PTBI road at Eng'g Bldg. 1 north-east entrance",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 56.14,
+      "y_percent": 36.55
+    },
+    {
+      "node_id": "j_road_ptbi_west",
+      "node_name": "PTBI road at PTBI west entrance",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 56.14,
+      "y_percent": 38.04
+    },
+    {
+      "node_id": "j_road_op2_east",
+      "node_name": "South road – orange path (behind Eng'g Bldg. 1) link",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 60.17,
+      "y_percent": 42.32
+    },
+    {
+      "node_id": "f_erb_south",
+      "node_name": "South road in front of the Engineering Research Bldg.",
+      "node_type": "building_frontage",
+      "verification_status": "traced_from_map",
+      "building_id": "engineering_research_bldg",
+      "x_percent": 81.04,
+      "y_percent": 41.98
+    },
+    {
+      "node_id": "j_road_amph_se",
+      "node_name": "Top of east service road",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 89.83,
+      "y_percent": 30.3
+    },
+    {
+      "node_id": "j_op1_junction",
+      "node_name": "Orange path junction north of Acad Bldg. 1",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 24.79,
+      "y_percent": 56.32
+    },
+    {
+      "node_id": "f_acad1_north",
+      "node_name": "Orange path beside the north-east corner of Acad Bldg. 1",
+      "node_type": "building_frontage",
+      "verification_status": "traced_from_map",
+      "building_id": "acad_bldg_1",
+      "x_percent": 27.75,
+      "y_percent": 56.52
+    },
+    {
+      "node_id": "j_op1_hook",
+      "node_name": "Orange path bend west of Acad Bldg. 1",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 14.72,
+      "y_percent": 61.68
+    },
+    {
+      "node_id": "f_acad1_west",
+      "node_name": "End of orange spur west of Acad Bldg. 1",
+      "node_type": "building_frontage",
+      "verification_status": "traced_from_map",
+      "building_id": "acad_bldg_1",
+      "x_percent": 16.31,
+      "y_percent": 61.82
+    },
+    {
+      "node_id": "n_op2_west_end",
+      "node_name": "Orange path west end (SW corner of Eng'g Bldg. 1)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 36.86,
+      "y_percent": 48.1
+    },
+    {
+      "node_id": "j_op2_back",
+      "node_name": "Orange path behind Eng'g Bldg. 1 back entrance",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 53.92,
+      "y_percent": 47.69
+    },
+    {
+      "node_id": "n_op2_east_end",
+      "node_name": "Orange path east end (south road)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 59.96,
+      "y_percent": 43.55
+    },
+    {
+      "node_id": "j_op4_fork",
+      "node_name": "Purple walkway fork south of gate plaza",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 28.5,
+      "y_percent": 74.12
+    },
+    {
+      "node_id": "j_acad2_path",
+      "node_name": "Start of paths at Acad Bldg. 2 south-east door",
+      "node_type": "path_junction",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 26.69,
+      "y_percent": 53.8
+    },
+    {
+      "node_id": "j_road_acad2",
+      "node_name": "Main road – purple walkway from Acad Bldg. 2",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 32.84,
+      "y_percent": 54.89
+    },
+    {
+      "node_id": "j_road_eng2_nw",
+      "node_name": "Main road beside Eng'g Bldg. 2 north-west entrance",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 32.94,
+      "y_percent": 53.87
+    },
+    {
+      "node_id": "j_road_eng2_w",
+      "node_name": "Main road beside Eng'g Bldg. 2 west entrance",
+      "node_type": "walkway_intersection",
+      "verification_status": "traced_from_map",
+      "building_id": null,
+      "x_percent": 31.99,
+      "y_percent": 63.08
+    },
+    {
+      "node_id": "n_eng1_entrance_ne",
+      "node_name": "North-east entrance (facing PTBI road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "eng_bldg_1",
+      "x_percent": 53.35,
+      "y_percent": 36.55
+    },
+    {
+      "node_id": "n_eng1_entrance_west",
+      "node_name": "West entrance (porch, facing main road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "eng_bldg_1",
+      "x_percent": 33.3,
+      "y_percent": 41.83
+    },
+    {
+      "node_id": "n_eng1_entrance_back",
+      "node_name": "South-east back entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "eng_bldg_1",
+      "x_percent": 54.38,
+      "y_percent": 45.21
+    },
+    {
+      "node_id": "n_eng2_entrance_north",
+      "node_name": "North-west entrance (facing main road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "eng_bldg_2",
+      "x_percent": 35.83,
+      "y_percent": 53.69
+    },
+    {
+      "node_id": "n_eng2_entrance_west",
+      "node_name": "West entrance (facing main road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "eng_bldg_2",
+      "x_percent": 34.53,
+      "y_percent": 63.05
+    },
+    {
+      "node_id": "n_eng2_entrance_annex",
+      "node_name": "Annex west entrance (near Main Gate)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "unverified",
+      "building_id": "eng_bldg_2",
+      "x_percent": 32.63,
+      "y_percent": 76.88
+    },
+    {
+      "node_id": "n_acad2_entrance_ne",
+      "node_name": "North-east entrance (facing main road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "acad_bldg_2_sas",
+      "x_percent": 27.33,
+      "y_percent": 42.83
+    },
+    {
+      "node_id": "n_acad2_entrance_se",
+      "node_name": "South-east entrance (start of the purple and orange paths)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "acad_bldg_2_sas",
+      "x_percent": 25.99,
+      "y_percent": 52.66
+    },
+    {
+      "node_id": "n_cae_entrance_west",
+      "node_name": "West entrance (narrow lane)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "unverified",
+      "building_id": "college_arts_education",
+      "x_percent": 27.11,
+      "y_percent": 89.31
+    },
+    {
+      "node_id": "n_neb_entrance_ne",
+      "node_name": "North-east entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "new_engineering_bldg",
+      "x_percent": 27.41,
+      "y_percent": 80.51
+    },
+    {
+      "node_id": "n_ptbi_entrance_west",
+      "node_name": "West entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "ptbi",
+      "x_percent": 59.53,
+      "y_percent": 38.21
+    },
+    {
+      "node_id": "n_ted_entrance_south",
+      "node_name": "South entrance (facing loop road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "teachers_education",
+      "x_percent": 49.02,
+      "y_percent": 27.15
+    },
+    {
+      "node_id": "n_dost_entrance_north",
+      "node_name": "North entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "dost",
+      "x_percent": 50.44,
+      "y_percent": 30.94
+    },
+    {
+      "node_id": "n_amph_entrance_nw",
+      "node_name": "North-west entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "amphitheater",
+      "x_percent": 74.23,
+      "y_percent": 16.85
+    },
+    {
+      "node_id": "n_amph_entrance_se",
+      "node_name": "South-east entrance",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "amphitheater",
+      "x_percent": 90.97,
+      "y_percent": 27.48
+    },
+    {
+      "node_id": "n_sac_entrance_south",
+      "node_name": "South entrance (facing loop road)",
+      "node_type": "building_entrance_connection",
+      "verification_status": "visually_matched",
+      "building_id": "sac",
+      "x_percent": 64.53,
+      "y_percent": 25.6
+    },
+    {
+      "node_id": "q_quad_west_end",
+      "node_name": "Quadrangle path - west end (west porch)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "unverified",
+      "building_id": "eng_bldg_1",
+      "x_percent": 35.47,
+      "y_percent": 41.01
+    },
+    {
+      "node_id": "q_quad_west_j",
+      "node_name": "Quadrangle path - west corridor junction",
+      "node_type": "path_junction",
+      "verification_status": "unverified",
+      "building_id": "eng_bldg_1",
+      "x_percent": 39.32,
+      "y_percent": 41.01
+    },
+    {
+      "node_id": "q_quad_ne_end",
+      "node_name": "Quadrangle path - north end (near north-east entrance)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "unverified",
+      "building_id": "eng_bldg_1",
+      "x_percent": 50.76,
+      "y_percent": 36.41
+    },
+    {
+      "node_id": "q_quad_back",
+      "node_name": "Quadrangle path - beside back entrance",
+      "node_type": "path_junction",
+      "verification_status": "unverified",
+      "building_id": "eng_bldg_1",
+      "x_percent": 54.13,
+      "y_percent": 45.38
+    },
+    {
+      "node_id": "q_quad_east_end",
+      "node_name": "Quadrangle path - east end (meets orange path behind Eng'g Bldg. 1)",
+      "node_type": "walkway_endpoint",
+      "verification_status": "unverified",
+      "building_id": null,
+      "x_percent": 60.06,
+      "y_percent": 45.18
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "s_gate_access",
+      "start_node_id": "n_main_gate",
+      "end_node_id": "j_gate_plaza",
+      "distance_m": null,
+      "length_map_px": 53.5,
+      "geometry_coordinates": [
+        [
+          23.07,
+          72.15
+        ],
+        [
+          25.0,
+          73.23
+        ],
+        [
+          26.48,
+          73.17
+        ],
+        [
+          28.07,
+          72.96
+        ]
+      ],
+      "segment_type": "main_gate_access",
+      "segment_name": "Gate entry road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_01",
+      "start_node_id": "j_gate_plaza",
+      "end_node_id": "j_road_op1_south",
+      "distance_m": null,
+      "length_map_px": 38.0,
+      "geometry_coordinates": [
+        [
+          28.07,
+          72.96
+        ],
+        [
+          29.13,
+          71.54
+        ],
+        [
+          29.87,
+          70.65
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_02",
+      "start_node_id": "j_road_op1_south",
+      "end_node_id": "j_road_eng2_w",
+      "distance_m": null,
+      "length_map_px": 115.6,
+      "geometry_coordinates": [
+        [
+          29.87,
+          70.65
+        ],
+        [
+          30.93,
+          69.16
+        ],
+        [
+          30.93,
+          66.71
+        ],
+        [
+          31.57,
+          65.62
+        ],
+        [
+          31.57,
+          63.72
+        ],
+        [
+          31.99,
+          63.08
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_02b",
+      "start_node_id": "j_road_eng2_w",
+      "end_node_id": "j_road_acad_east",
+      "distance_m": null,
+      "length_map_px": 95.3,
+      "geometry_coordinates": [
+        [
+          31.99,
+          63.08
+        ],
+        [
+          32.42,
+          62.43
+        ],
+        [
+          32.31,
+          60.39
+        ],
+        [
+          32.94,
+          59.38
+        ],
+        [
+          32.73,
+          57.2
+        ],
+        [
+          32.42,
+          56.79
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_03",
+      "start_node_id": "j_road_acad_east",
+      "end_node_id": "j_road_acad2",
+      "distance_m": null,
+      "length_map_px": 28.3,
+      "geometry_coordinates": [
+        [
+          32.42,
+          56.79
+        ],
+        [
+          32.84,
+          54.89
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_03b",
+      "start_node_id": "j_road_acad2",
+      "end_node_id": "j_road_eng2_nw",
+      "distance_m": null,
+      "length_map_px": 15.0,
+      "geometry_coordinates": [
+        [
+          32.84,
+          54.89
+        ],
+        [
+          32.94,
+          53.87
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_03c",
+      "start_node_id": "j_road_eng2_nw",
+      "end_node_id": "j_road_plaza",
+      "distance_m": null,
+      "length_map_px": 88.7,
+      "geometry_coordinates": [
+        [
+          32.94,
+          53.87
+        ],
+        [
+          33.47,
+          53.12
+        ],
+        [
+          33.47,
+          50.2
+        ],
+        [
+          31.36,
+          48.37
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_04",
+      "start_node_id": "j_road_plaza",
+      "end_node_id": "j_road_eng1_west",
+      "distance_m": null,
+      "length_map_px": 85.7,
+      "geometry_coordinates": [
+        [
+          31.36,
+          48.37
+        ],
+        [
+          30.51,
+          47.01
+        ],
+        [
+          30.83,
+          44.09
+        ],
+        [
+          30.93,
+          42.66
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_05",
+      "start_node_id": "j_road_eng1_west",
+      "end_node_id": "j_road_side_gate",
+      "distance_m": null,
+      "length_map_px": 122.5,
+      "geometry_coordinates": [
+        [
+          30.93,
+          42.66
+        ],
+        [
+          30.93,
+          41.71
+        ],
+        [
+          31.46,
+          41.17
+        ],
+        [
+          31.57,
+          39.74
+        ],
+        [
+          32.1,
+          38.99
+        ],
+        [
+          32.2,
+          38.11
+        ],
+        [
+          32.94,
+          37.23
+        ],
+        [
+          33.26,
+          34.65
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_side_gate",
+      "start_node_id": "j_road_side_gate",
+      "end_node_id": "n_side_gate",
+      "distance_m": null,
+      "length_map_px": 54.5,
+      "geometry_coordinates": [
+        [
+          33.26,
+          34.65
+        ],
+        [
+          29.56,
+          33.56
+        ],
+        [
+          27.86,
+          33.49
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Branch to highway-side gate",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_06",
+      "start_node_id": "j_road_side_gate",
+      "end_node_id": "j_road_teachers",
+      "distance_m": null,
+      "length_map_px": 189.6,
+      "geometry_coordinates": [
+        [
+          33.26,
+          34.65
+        ],
+        [
+          34.85,
+          34.17
+        ],
+        [
+          36.55,
+          33.15
+        ],
+        [
+          37.39,
+          32.4
+        ],
+        [
+          37.61,
+          31.52
+        ],
+        [
+          38.67,
+          30.57
+        ],
+        [
+          40.78,
+          29.96
+        ],
+        [
+          43.43,
+          28.67
+        ],
+        [
+          46.5,
+          28.19
+        ],
+        [
+          49.05,
+          28.19
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_07",
+      "start_node_id": "j_road_teachers",
+      "end_node_id": "j_road_dost",
+      "distance_m": null,
+      "length_map_px": 15.0,
+      "geometry_coordinates": [
+        [
+          49.05,
+          28.19
+        ],
+        [
+          50.64,
+          28.19
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_road_08",
+      "start_node_id": "j_road_dost",
+      "end_node_id": "j_road_ne",
+      "distance_m": null,
+      "length_map_px": 49.1,
+      "geometry_coordinates": [
+        [
+          50.64,
+          28.19
+        ],
+        [
+          52.01,
+          28.19
+        ],
+        [
+          54.66,
+          28.46
+        ],
+        [
+          55.61,
+          28.06
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Main campus road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_north_01",
+      "start_node_id": "j_road_ne",
+      "end_node_id": "f_canteen",
+      "distance_m": null,
+      "length_map_px": 25.1,
+      "geometry_coordinates": [
+        [
+          55.61,
+          28.06
+        ],
+        [
+          56.57,
+          27.04
+        ],
+        [
+          57.31,
+          26.83
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "North road (Canteen / SAC)",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_north_02",
+      "start_node_id": "f_canteen",
+      "end_node_id": "j_road_sac",
+      "distance_m": null,
+      "length_map_px": 68.0,
+      "geometry_coordinates": [
+        [
+          57.31,
+          26.83
+        ],
+        [
+          64.51,
+          26.7
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "North road (Canteen / SAC)",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_north_03",
+      "start_node_id": "j_road_sac",
+      "end_node_id": "j_road_north_end",
+      "distance_m": null,
+      "length_map_px": 71.1,
+      "geometry_coordinates": [
+        [
+          64.51,
+          26.7
+        ],
+        [
+          70.02,
+          26.49
+        ],
+        [
+          72.03,
+          26.43
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "North road (Canteen / SAC)",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_lane_amph",
+      "start_node_id": "j_road_north_end",
+      "end_node_id": "n_amph_entrance_nw",
+      "distance_m": null,
+      "length_map_px": 142.6,
+      "geometry_coordinates": [
+        [
+          72.03,
+          26.43
+        ],
+        [
+          72.88,
+          23.78
+        ],
+        [
+          73.52,
+          20.38
+        ],
+        [
+          74.05,
+          17.8
+        ],
+        [
+          74.23,
+          16.85
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Lawn lane to Amphitheater",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_inferred",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "Light lawn strip between the trees and the amphitheater; not clearly paved on the plan."
+    },
+    {
+      "segment_id": "s_ptbi_rd_01",
+      "start_node_id": "j_road_ne",
+      "end_node_id": "j_road_eng1_ne",
+      "distance_m": null,
+      "length_map_px": 125.3,
+      "geometry_coordinates": [
+        [
+          55.61,
+          28.06
+        ],
+        [
+          55.83,
+          29.08
+        ],
+        [
+          55.83,
+          30.3
+        ],
+        [
+          56.14,
+          32.61
+        ],
+        [
+          56.25,
+          34.99
+        ],
+        [
+          56.14,
+          36.55
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Road between Eng'g Bldg. 1 and PTBI",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_ptbi_rd_02",
+      "start_node_id": "j_road_eng1_ne",
+      "end_node_id": "j_road_ptbi_west",
+      "distance_m": null,
+      "length_map_px": 22.0,
+      "geometry_coordinates": [
+        [
+          56.14,
+          36.55
+        ],
+        [
+          56.14,
+          38.04
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Road between Eng'g Bldg. 1 and PTBI",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_ptbi_rd_03",
+      "start_node_id": "j_road_ptbi_west",
+      "end_node_id": "j_road_op2_east",
+      "distance_m": null,
+      "length_map_px": 83.9,
+      "geometry_coordinates": [
+        [
+          56.14,
+          38.04
+        ],
+        [
+          55.83,
+          38.52
+        ],
+        [
+          56.36,
+          40.35
+        ],
+        [
+          58.37,
+          42.05
+        ],
+        [
+          60.17,
+          42.32
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Road between Eng'g Bldg. 1 and PTBI",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_south_01",
+      "start_node_id": "j_road_op2_east",
+      "end_node_id": "f_erb_south",
+      "distance_m": null,
+      "length_map_px": 198.5,
+      "geometry_coordinates": [
+        [
+          60.17,
+          42.32
+        ],
+        [
+          65.89,
+          42.39
+        ],
+        [
+          72.88,
+          42.19
+        ],
+        [
+          75.0,
+          41.71
+        ],
+        [
+          79.13,
+          41.78
+        ],
+        [
+          81.04,
+          41.98
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "South road (PTBI / Research Bldg.)",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_south_02",
+      "start_node_id": "f_erb_south",
+      "end_node_id": "j_road_amph_se",
+      "distance_m": null,
+      "length_map_px": 213.9,
+      "geometry_coordinates": [
+        [
+          81.04,
+          41.98
+        ],
+        [
+          81.57,
+          41.98
+        ],
+        [
+          86.02,
+          40.9
+        ],
+        [
+          86.65,
+          40.42
+        ],
+        [
+          87.5,
+          38.86
+        ],
+        [
+          87.92,
+          33.08
+        ],
+        [
+          88.56,
+          32.0
+        ],
+        [
+          89.62,
+          30.98
+        ],
+        [
+          89.83,
+          30.3
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "East service road",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_acad2_se",
+      "start_node_id": "n_acad2_entrance_se",
+      "end_node_id": "j_acad2_path",
+      "distance_m": null,
+      "length_map_px": 18.1,
+      "geometry_coordinates": [
+        [
+          25.99,
+          52.66
+        ],
+        [
+          26.69,
+          53.8
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_pw_acad2_road",
+      "start_node_id": "j_acad2_path",
+      "end_node_id": "j_road_acad2",
+      "distance_m": null,
+      "length_map_px": 60.5,
+      "geometry_coordinates": [
+        [
+          26.69,
+          53.8
+        ],
+        [
+          32.1,
+          54.89
+        ],
+        [
+          32.84,
+          54.89
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway: Acad Bldg. 2 to main road",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_pw_acad1_spur",
+      "start_node_id": "j_op1_hook",
+      "end_node_id": "f_acad1_west",
+      "distance_m": null,
+      "length_map_px": 15.1,
+      "geometry_coordinates": [
+        [
+          14.72,
+          61.68
+        ],
+        [
+          16.31,
+          61.82
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway west of Acad Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_pw_acad1_ws",
+      "start_node_id": "j_op1_hook",
+      "end_node_id": "j_road_op1_south",
+      "distance_m": null,
+      "length_map_px": 261.8,
+      "geometry_coordinates": [
+        [
+          14.72,
+          61.68
+        ],
+        [
+          13.14,
+          62.91
+        ],
+        [
+          13.45,
+          67.93
+        ],
+        [
+          17.37,
+          68.14
+        ],
+        [
+          20.34,
+          68.61
+        ],
+        [
+          23.2,
+          68.61
+        ],
+        [
+          27.65,
+          69.43
+        ],
+        [
+          29.87,
+          70.65
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway west and south of Acad Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "Re-marked purple on the latest map (it was orange on the earlier map). The stroke ends on the edge of the gate road."
+    },
+    {
+      "segment_id": "s_pw_gate_a",
+      "start_node_id": "j_gate_plaza",
+      "end_node_id": "j_op4_fork",
+      "distance_m": null,
+      "length_map_px": 17.5,
+      "geometry_coordinates": [
+        [
+          28.07,
+          72.96
+        ],
+        [
+          28.39,
+          73.57
+        ],
+        [
+          28.5,
+          74.12
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway south of gate plaza",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "Re-marked purple on the latest map (orange on the earlier map)."
+    },
+    {
+      "segment_id": "s_pw_gate_neb",
+      "start_node_id": "j_op4_fork",
+      "end_node_id": "n_neb_entrance_ne",
+      "distance_m": null,
+      "length_map_px": 96.9,
+      "geometry_coordinates": [
+        [
+          28.5,
+          74.12
+        ],
+        [
+          27.86,
+          74.66
+        ],
+        [
+          27.01,
+          78.94
+        ],
+        [
+          27.41,
+          80.51
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway to New Eng'g Bldg.",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_pw_gate_eng2",
+      "start_node_id": "j_op4_fork",
+      "end_node_id": "n_eng2_entrance_annex",
+      "distance_m": null,
+      "length_map_px": 61.8,
+      "geometry_coordinates": [
+        [
+          28.5,
+          74.12
+        ],
+        [
+          30.08,
+          75.0
+        ],
+        [
+          31.14,
+          76.77
+        ],
+        [
+          32.63,
+          76.88
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple walkway to Eng'g Bldg. 2 annex",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_pw_neb_cae",
+      "start_node_id": "n_neb_entrance_ne",
+      "end_node_id": "n_cae_entrance_west",
+      "distance_m": null,
+      "length_map_px": 151.3,
+      "geometry_coordinates": [
+        [
+          27.41,
+          80.51
+        ],
+        [
+          28.07,
+          81.73
+        ],
+        [
+          25.95,
+          86.14
+        ],
+        [
+          25.32,
+          89.33
+        ],
+        [
+          27.11,
+          89.31
+        ]
+      ],
+      "segment_type": "original_walkway",
+      "segment_name": "Purple lane between New Eng'g Bldg. and CAE Bldg.",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "purple",
+      "verification_status": "annotated_original",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "Re-marked purple on the latest map (orange on the earlier map)."
+    },
+    {
+      "segment_id": "s_op1_a",
+      "start_node_id": "j_acad2_path",
+      "end_node_id": "j_op1_junction",
+      "distance_m": null,
+      "length_map_px": 41.4,
+      "geometry_coordinates": [
+        [
+          26.69,
+          53.8
+        ],
+        [
+          25.11,
+          55.57
+        ],
+        [
+          24.79,
+          56.32
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path between Acad Bldg. 1 and 2",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_acad1_loop",
+      "note": null
+    },
+    {
+      "segment_id": "s_op1_b",
+      "start_node_id": "j_op1_junction",
+      "end_node_id": "f_acad1_north",
+      "distance_m": null,
+      "length_map_px": 28.2,
+      "geometry_coordinates": [
+        [
+          24.79,
+          56.32
+        ],
+        [
+          27.75,
+          56.52
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path between Acad Bldg. 1 and 2",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_acad1_loop",
+      "note": null
+    },
+    {
+      "segment_id": "s_op1_b2",
+      "start_node_id": "f_acad1_north",
+      "end_node_id": "j_road_acad_east",
+      "distance_m": null,
+      "length_map_px": 44.2,
+      "geometry_coordinates": [
+        [
+          27.75,
+          56.52
+        ],
+        [
+          32.42,
+          56.79
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path between Acad Bldg. 1 and 2",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_acad1_loop",
+      "note": null
+    },
+    {
+      "segment_id": "s_op1_c",
+      "start_node_id": "j_op1_junction",
+      "end_node_id": "j_op1_hook",
+      "distance_m": null,
+      "length_map_px": 156.7,
+      "geometry_coordinates": [
+        [
+          24.79,
+          56.32
+        ],
+        [
+          19.07,
+          56.05
+        ],
+        [
+          16.63,
+          56.59
+        ],
+        [
+          15.15,
+          58.7
+        ],
+        [
+          14.72,
+          61.68
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path west of Acad Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_acad1_loop",
+      "note": null
+    },
+    {
+      "segment_id": "s_op2_a",
+      "start_node_id": "n_op2_west_end",
+      "end_node_id": "j_op2_back",
+      "distance_m": null,
+      "length_map_px": 161.3,
+      "geometry_coordinates": [
+        [
+          36.86,
+          48.1
+        ],
+        [
+          42.06,
+          48.23
+        ],
+        [
+          53.92,
+          47.69
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path behind Eng'g Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_eng1_back",
+      "note": null
+    },
+    {
+      "segment_id": "s_op2_b",
+      "start_node_id": "j_op2_back",
+      "end_node_id": "n_op2_east_end",
+      "distance_m": null,
+      "length_map_px": 94.9,
+      "geometry_coordinates": [
+        [
+          53.92,
+          47.69
+        ],
+        [
+          56.25,
+          47.62
+        ],
+        [
+          57.42,
+          47.21
+        ],
+        [
+          58.79,
+          46.2
+        ],
+        [
+          59.96,
+          43.55
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Orange path behind Eng'g Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": "ap_eng1_back",
+      "note": null
+    },
+    {
+      "segment_id": "s_op2_link_w",
+      "start_node_id": "n_op2_west_end",
+      "end_node_id": "j_road_plaza",
+      "distance_m": null,
+      "length_map_px": 52.2,
+      "geometry_coordinates": [
+        [
+          36.86,
+          48.1
+        ],
+        [
+          33.9,
+          48.23
+        ],
+        [
+          31.36,
+          48.37
+        ]
+      ],
+      "segment_type": "junction_link",
+      "segment_name": "Link: orange path to main road",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "visual_connection",
+      "is_walkable": true,
+      "path_id": "ap_eng1_back",
+      "note": "The stroke stops ~13 px from the road surface at the SW corner of Eng'g Bldg. 1."
+    },
+    {
+      "segment_id": "s_op2_link_e",
+      "start_node_id": "n_op2_east_end",
+      "end_node_id": "j_road_op2_east",
+      "distance_m": null,
+      "length_map_px": 18.1,
+      "geometry_coordinates": [
+        [
+          59.96,
+          43.55
+        ],
+        [
+          60.17,
+          42.32
+        ]
+      ],
+      "segment_type": "junction_link",
+      "segment_name": "Link: orange path to south road",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "visual_connection",
+      "is_walkable": true,
+      "path_id": "ap_eng1_back",
+      "note": "The stroke ends on the edge of the south road."
+    },
+    {
+      "segment_id": "s_acc_eng1_ne",
+      "start_node_id": "n_eng1_entrance_ne",
+      "end_node_id": "j_road_eng1_ne",
+      "distance_m": null,
+      "length_map_px": 26.4,
+      "geometry_coordinates": [
+        [
+          53.35,
+          36.55
+        ],
+        [
+          56.14,
+          36.55
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_eng1_west",
+      "start_node_id": "n_eng1_entrance_west",
+      "end_node_id": "j_road_eng1_west",
+      "distance_m": null,
+      "length_map_px": 25.7,
+      "geometry_coordinates": [
+        [
+          33.3,
+          41.83
+        ],
+        [
+          31.78,
+          42.26
+        ],
+        [
+          30.93,
+          42.66
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_eng1_back",
+      "start_node_id": "n_eng1_entrance_back",
+      "end_node_id": "j_op2_back",
+      "distance_m": null,
+      "length_map_px": 36.8,
+      "geometry_coordinates": [
+        [
+          54.38,
+          45.21
+        ],
+        [
+          53.92,
+          47.69
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_inferred",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "~40 px across lawn to the orange path."
+    },
+    {
+      "segment_id": "s_acc_eng2_nw",
+      "start_node_id": "n_eng2_entrance_north",
+      "end_node_id": "j_road_eng2_nw",
+      "distance_m": null,
+      "length_map_px": 27.4,
+      "geometry_coordinates": [
+        [
+          35.83,
+          53.69
+        ],
+        [
+          32.94,
+          53.87
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_eng2_w",
+      "start_node_id": "n_eng2_entrance_west",
+      "end_node_id": "j_road_eng2_w",
+      "distance_m": null,
+      "length_map_px": 24.0,
+      "geometry_coordinates": [
+        [
+          34.53,
+          63.05
+        ],
+        [
+          31.99,
+          63.08
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_acad2_ne",
+      "start_node_id": "n_acad2_entrance_ne",
+      "end_node_id": "j_road_eng1_west",
+      "distance_m": null,
+      "length_map_px": 34.1,
+      "geometry_coordinates": [
+        [
+          27.33,
+          42.83
+        ],
+        [
+          30.93,
+          42.66
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_ptbi_w",
+      "start_node_id": "n_ptbi_entrance_west",
+      "end_node_id": "j_road_ptbi_west",
+      "distance_m": null,
+      "length_map_px": 32.1,
+      "geometry_coordinates": [
+        [
+          59.53,
+          38.21
+        ],
+        [
+          56.14,
+          38.04
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_ted",
+      "start_node_id": "n_ted_entrance_south",
+      "end_node_id": "j_road_teachers",
+      "distance_m": null,
+      "length_map_px": 15.4,
+      "geometry_coordinates": [
+        [
+          49.02,
+          27.15
+        ],
+        [
+          49.05,
+          28.19
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_dost",
+      "start_node_id": "n_dost_entrance_north",
+      "end_node_id": "j_road_dost",
+      "distance_m": null,
+      "length_map_px": 40.5,
+      "geometry_coordinates": [
+        [
+          50.44,
+          30.94
+        ],
+        [
+          50.64,
+          28.19
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_inferred",
+      "is_walkable": true,
+      "path_id": null,
+      "note": "Short link across the lawn north of DOST."
+    },
+    {
+      "segment_id": "s_acc_sac",
+      "start_node_id": "n_sac_entrance_south",
+      "end_node_id": "j_road_sac",
+      "distance_m": null,
+      "length_map_px": 16.2,
+      "geometry_coordinates": [
+        [
+          64.53,
+          25.6
+        ],
+        [
+          64.51,
+          26.7
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_acc_amph_se",
+      "start_node_id": "n_amph_entrance_se",
+      "end_node_id": "j_road_amph_se",
+      "distance_m": null,
+      "length_map_px": 42.9,
+      "geometry_coordinates": [
+        [
+          90.97,
+          27.48
+        ],
+        [
+          89.83,
+          30.3
+        ]
+      ],
+      "segment_type": "entrance_access",
+      "segment_name": "Entrance access",
+      "source": "campus_map.png",
+      "annotation_colour": null,
+      "verification_status": "traced_from_map",
+      "is_walkable": true,
+      "path_id": null,
+      "note": null
+    },
+    {
+      "segment_id": "s_quad_stub",
+      "start_node_id": "q_quad_west_end",
+      "end_node_id": "q_quad_west_j",
+      "distance_m": null,
+      "length_map_px": 36.4,
+      "geometry_coordinates": [
+        [
+          35.47,
+          41.01
+        ],
+        [
+          39.32,
+          41.01
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Quadrangle alternative - west porch stub",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "unverified",
+      "is_walkable": false,
+      "path_id": "alt_quadrangle_01",
+      "note": "Drawn over the Eng'g Bldg. 1 footprint (courtyard corridor). Unverified: excluded from routing; distance not measured."
+    },
+    {
+      "segment_id": "s_quad_north",
+      "start_node_id": "q_quad_west_j",
+      "end_node_id": "q_quad_ne_end",
+      "distance_m": null,
+      "length_map_px": 158.6,
+      "geometry_coordinates": [
+        [
+          39.32,
+          41.01
+        ],
+        [
+          39.35,
+          39.4
+        ],
+        [
+          39.79,
+          38.04
+        ],
+        [
+          40.11,
+          37.36
+        ],
+        [
+          40.53,
+          37.02
+        ],
+        [
+          42.0,
+          36.68
+        ],
+        [
+          44.49,
+          36.48
+        ],
+        [
+          47.67,
+          36.48
+        ],
+        [
+          50.76,
+          36.41
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Quadrangle alternative - west and north corridor",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "unverified",
+      "is_walkable": false,
+      "path_id": "alt_quadrangle_01",
+      "note": "Drawn over the Eng'g Bldg. 1 footprint (courtyard corridor). Unverified: excluded from routing; distance not measured."
+    },
+    {
+      "segment_id": "s_quad_south",
+      "start_node_id": "q_quad_west_j",
+      "end_node_id": "q_quad_back",
+      "distance_m": null,
+      "length_map_px": 193.1,
+      "geometry_coordinates": [
+        [
+          39.32,
+          41.01
+        ],
+        [
+          39.25,
+          42.8
+        ],
+        [
+          39.16,
+          44.16
+        ],
+        [
+          39.48,
+          44.5
+        ],
+        [
+          40.11,
+          44.84
+        ],
+        [
+          41.91,
+          45.18
+        ],
+        [
+          44.49,
+          45.31
+        ],
+        [
+          47.67,
+          45.41
+        ],
+        [
+          50.85,
+          45.38
+        ],
+        [
+          54.13,
+          45.38
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Quadrangle alternative - west and south corridor",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "unverified",
+      "is_walkable": false,
+      "path_id": "alt_quadrangle_01",
+      "note": "Drawn over the Eng'g Bldg. 1 footprint (courtyard corridor). Unverified: excluded from routing; distance not measured."
+    },
+    {
+      "segment_id": "s_quad_east",
+      "start_node_id": "q_quad_back",
+      "end_node_id": "q_quad_east_end",
+      "distance_m": null,
+      "length_map_px": 57.1,
+      "geometry_coordinates": [
+        [
+          54.13,
+          45.38
+        ],
+        [
+          56.14,
+          45.41
+        ],
+        [
+          57.2,
+          45.34
+        ],
+        [
+          57.73,
+          45.27
+        ],
+        [
+          58.26,
+          45.07
+        ],
+        [
+          60.06,
+          45.18
+        ]
+      ],
+      "segment_type": "alternative_walkway",
+      "segment_name": "Quadrangle alternative - tail to the orange path behind Eng'g Bldg. 1",
+      "source": "latest_annotated_campus_map.png",
+      "annotation_colour": "orange",
+      "verification_status": "unverified",
+      "is_walkable": false,
+      "path_id": "alt_quadrangle_01",
+      "note": "Mostly outside the building; ends on the orange path behind Eng'g Bldg. 1. Unverified: excluded from routing."
+    }
+  ],
+  "alternative_paths": [
+    {
+      "path_id": "ap_acad1_loop",
+      "path_name": "Orange path between Acad Bldg. 1 and 2",
+      "start_location": "acad_bldg_2_sas",
+      "end_location": "main road / west side of Acad Bldg. 1",
+      "description": "Orange stroke from the south-east door of Acad Bldg. 2: east between Acad Bldg. 1 and 2 to the main road, and west along the north side of Acad Bldg. 1. Its west and south continuation was re-marked purple (original walkway) on the latest map.",
+      "possible_excel_match": "\"between acad bldg. 1 and 2\" (alternative routes in the Pairs sheet) – not verified",
+      "path_coordinates": [
+        [
+          [
+            26.69,
+            53.8
+          ],
+          [
+            25.11,
+            55.57
+          ],
+          [
+            24.79,
+            56.32
+          ]
+        ],
+        [
+          [
+            24.79,
+            56.32
+          ],
+          [
+            27.75,
+            56.52
+          ]
+        ],
+        [
+          [
+            27.75,
+            56.52
+          ],
+          [
+            32.42,
+            56.79
+          ]
+        ],
+        [
+          [
+            24.79,
+            56.32
+          ],
+          [
+            19.07,
+            56.05
+          ],
+          [
+            16.63,
+            56.59
+          ],
+          [
+            15.15,
+            58.7
+          ],
+          [
+            14.72,
+            61.68
+          ]
+        ]
+      ],
+      "distance_m": null,
+      "verification_status": "unmeasured",
+      "segment_ids": [
+        "s_op1_a",
+        "s_op1_b",
+        "s_op1_b2",
+        "s_op1_c"
+      ]
+    },
+    {
+      "path_id": "alt_quadrangle_01",
+      "path_name": "Quadrangle alternative path (Eng'g Bldg. 1)",
+      "start_location": "eng_bldg_1 (west porch)",
+      "end_location": "eng_bldg_1 (north-east and back entrances) / orange path behind Eng'g Bldg. 1",
+      "description": "NEW on the latest annotated map: an orange line around the courtyard of Eng'g Bldg. 1 (Quadrangle), with a stub to the west porch and a tail past the back entrance to the orange path behind the building. It is drawn over the building footprint, so it is stored and shown but excluded from routing until the corridor is confirmed open to pedestrians and measured.",
+      "possible_excel_match": "\"pathway on the right of quad\" / \"through quad\" - not verified",
+      "path_coordinates": [
+        [
+          [
+            35.47,
+            41.01
+          ],
+          [
+            39.32,
+            41.01
+          ]
+        ],
+        [
+          [
+            39.32,
+            41.01
+          ],
+          [
+            39.35,
+            39.4
+          ],
+          [
+            39.79,
+            38.04
+          ],
+          [
+            40.11,
+            37.36
+          ],
+          [
+            40.53,
+            37.02
+          ],
+          [
+            42.0,
+            36.68
+          ],
+          [
+            44.49,
+            36.48
+          ],
+          [
+            47.67,
+            36.48
+          ],
+          [
+            50.76,
+            36.41
+          ]
+        ],
+        [
+          [
+            39.32,
+            41.01
+          ],
+          [
+            39.25,
+            42.8
+          ],
+          [
+            39.16,
+            44.16
+          ],
+          [
+            39.48,
+            44.5
+          ],
+          [
+            40.11,
+            44.84
+          ],
+          [
+            41.91,
+            45.18
+          ],
+          [
+            44.49,
+            45.31
+          ],
+          [
+            47.67,
+            45.41
+          ],
+          [
+            50.85,
+            45.38
+          ],
+          [
+            54.13,
+            45.38
+          ]
+        ],
+        [
+          [
+            54.13,
+            45.38
+          ],
+          [
+            56.14,
+            45.41
+          ],
+          [
+            57.2,
+            45.34
+          ],
+          [
+            57.73,
+            45.27
+          ],
+          [
+            58.26,
+            45.07
+          ],
+          [
+            60.06,
+            45.18
+          ]
+        ]
+      ],
+      "distance_m": null,
+      "verification_status": "unverified",
+      "segment_ids": [
+        "s_quad_stub",
+        "s_quad_north",
+        "s_quad_south",
+        "s_quad_east"
+      ]
+    },
+    {
+      "path_id": "ap_eng1_back",
+      "path_name": "Orange path behind Eng'g Bldg. 1",
+      "start_location": "main road (SW corner of Eng'g Bldg. 1)",
+      "end_location": "south road beside PTBI",
+      "description": "Runs along the south side of Eng'g Bldg. 1 past its back entrance, then turns north to the road south of PTBI.",
+      "possible_excel_match": "\"exit at back\" / \"pathway on the right of quad\" – not verified",
+      "path_coordinates": [
+        [
+          [
+            36.86,
+            48.1
+          ],
+          [
+            42.06,
+            48.23
+          ],
+          [
+            53.92,
+            47.69
+          ]
+        ],
+        [
+          [
+            53.92,
+            47.69
+          ],
+          [
+            56.25,
+            47.62
+          ],
+          [
+            57.42,
+            47.21
+          ],
+          [
+            58.79,
+            46.2
+          ],
+          [
+            59.96,
+            43.55
+          ]
+        ]
+      ],
+      "distance_m": null,
+      "verification_status": "unmeasured",
+      "segment_ids": [
+        "s_op2_a",
+        "s_op2_b",
+        "s_op2_link_w",
+        "s_op2_link_e"
+      ]
+    }
+  ],
+  "other_annotations": [
+    {
+      "id": "reclassified_by_latest_map",
+      "colour": "purple",
+      "segments": [
+        "s_pw_acad1_ws",
+        "s_pw_acad1_spur",
+        "s_pw_gate_a",
+        "s_pw_gate_neb",
+        "s_pw_gate_eng2",
+        "s_pw_neb_cae"
+      ],
+      "note": "These strokes were orange on the earlier annotated map. The latest map draws them purple, so they are now ORIGINAL campus walkways (the latest map is authoritative)."
+    },
+    {
+      "id": "green_dot_acad2",
+      "colour": "green",
+      "x_percent": 19.88,
+      "y_percent": 48.87,
+      "note": "Green dot drawn on Acad Bldg. 2. Its meaning is not defined in the brief, so it is recorded but not displayed or used."
+    }
+  ]
+}

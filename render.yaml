@@ -1,0 +1,31 @@
+# Render Blueprint for PSU PathFinder  (Render dashboard -> New -> Blueprint -> pick this repository)
+#
+# COST: a persistent disk needs a PAID instance. 0.5c-512mb is Render's smallest paid
+# web-service instance ("Starter", $7/month at the time of writing) and the 1 GB disk is
+# billed per GB per month. Check https://render.com/pricing before you create it.
+# Free instances cannot attach a disk, so the SQLite database would be wiped on every deploy.
+services:
+  - type: web
+    name: psu-pathfinder
+    runtime: python
+    plan: 0.5c-512mb
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 60 --preload --access-logfile - app:app
+    healthCheckPath: /healthz
+    autoDeployTrigger: commit          # every push to the connected branch redeploys
+    numInstances: 1                    # SQLite on one disk = exactly one instance
+    disk:
+      name: psu-pathfinder-data
+      mountPath: /var/data             # only files under this path survive deploys and restarts
+      sizeGB: 1
+    envVars:
+      - key: DATABASE_PATH
+        value: /var/data/psu_pathfinder.db
+      - key: SECRET_KEY
+        generateValue: true            # Render creates a random value; never commit a real key
+      - key: ADMIN_TOKEN
+        sync: false                    # Render asks you to type it when the Blueprint is created
+      - key: FLASK_DEBUG
+        value: "0"
+      - key: TRUST_PROXY
+        value: "1"

@@ -1,0 +1,529 @@
+{
+  "_about": "Building footprints (restricted areas). Legend-coloured blocks were detected by colour; extra plan structures were traced as rectangles. Used to reject any route line that passes through a building.",
+  "footprints": [
+    {
+      "footprint_id": "fp_eng_bldg_1",
+      "building_id": "eng_bldg_1",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          52.75,
+          34.58
+        ],
+        [
+          53.6,
+          47.08
+        ],
+        [
+          37.08,
+          47.15
+        ],
+        [
+          36.97,
+          35.33
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_eng_bldg_2",
+      "building_id": "eng_bldg_2",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          35.49,
+          51.36
+        ],
+        [
+          40.68,
+          52.45
+        ],
+        [
+          37.5,
+          85.39
+        ],
+        [
+          28.5,
+          84.58
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_acad_bldg_1",
+      "building_id": "acad_bldg_1",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          20.02,
+          56.73
+        ],
+        [
+          28.28,
+          57.95
+        ],
+        [
+          26.38,
+          68.0
+        ],
+        [
+          17.58,
+          67.05
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_acad_bldg_2_sas",
+      "building_id": "acad_bldg_2_sas",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          23.2,
+          39.06
+        ],
+        [
+          28.92,
+          40.62
+        ],
+        [
+          24.05,
+          55.84
+        ],
+        [
+          15.68,
+          53.94
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_college_arts_education",
+      "building_id": "college_arts_education",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          27.54,
+          86.01
+        ],
+        [
+          35.7,
+          86.35
+        ],
+        [
+          34.64,
+          93.14
+        ],
+        [
+          26.91,
+          92.8
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_new_engineering_bldg",
+      "building_id": "new_engineering_bldg",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          22.35,
+          79.42
+        ],
+        [
+          26.06,
+          79.89
+        ],
+        [
+          24.68,
+          90.35
+        ],
+        [
+          23.94,
+          93.14
+        ],
+        [
+          19.81,
+          92.87
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_engineering_research_bldg",
+      "building_id": "engineering_research_bldg",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          85.91,
+          32.4
+        ],
+        [
+          86.02,
+          40.42
+        ],
+        [
+          76.27,
+          40.49
+        ],
+        [
+          76.17,
+          32.47
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_ptbi",
+      "building_id": "ptbi",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          70.66,
+          28.12
+        ],
+        [
+          70.66,
+          40.9
+        ],
+        [
+          58.9,
+          40.96
+        ],
+        [
+          58.9,
+          28.12
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_school_canteen",
+      "building_id": "school_canteen",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          57.94,
+          22.15
+        ],
+        [
+          57.94,
+          25.2
+        ],
+        [
+          54.56,
+          25.2
+        ],
+        [
+          54.45,
+          22.15
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_teachers_education",
+      "building_id": "teachers_education",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          52.75,
+          23.51
+        ],
+        [
+          52.65,
+          27.24
+        ],
+        [
+          40.47,
+          27.24
+        ],
+        [
+          40.47,
+          23.44
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_dost",
+      "building_id": "dost",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          54.03,
+          30.64
+        ],
+        [
+          54.03,
+          33.7
+        ],
+        [
+          46.29,
+          33.63
+        ],
+        [
+          46.4,
+          30.64
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_amphitheater",
+      "building_id": "amphitheater",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          75.21,
+          14.61
+        ],
+        [
+          89.19,
+          16.92
+        ],
+        [
+          92.16,
+          27.11
+        ],
+        [
+          78.07,
+          25.54
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_sac",
+      "building_id": "sac",
+      "structure_name": null,
+      "footprint_coordinates": [
+        [
+          68.11,
+          18.27
+        ],
+        [
+          68.22,
+          25.2
+        ],
+        [
+          60.91,
+          25.27
+        ],
+        [
+          60.7,
+          18.34
+        ]
+      ],
+      "verification_status": "detected_from_legend_colour",
+      "source_image": "campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_eng1_west_porch",
+      "building_id": "eng_bldg_1",
+      "structure_name": "Engineering Bldg. 1 west porch (plan)",
+      "footprint_coordinates": [
+        [
+          33.47,
+          39.95
+        ],
+        [
+          36.65,
+          39.95
+        ],
+        [
+          36.65,
+          42.66
+        ],
+        [
+          33.47,
+          42.66
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_ne_green",
+      "building_id": null,
+      "structure_name": "Unlabelled building between PTBI and the Amphitheater (plan)",
+      "footprint_coordinates": [
+        [
+          72.67,
+          26.09
+        ],
+        [
+          78.39,
+          26.09
+        ],
+        [
+          78.39,
+          32.07
+        ],
+        [
+          72.67,
+          32.07
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_ptbi_annex",
+      "building_id": null,
+      "structure_name": "PTBI annex / Research Bldg. west wing (plan)",
+      "footprint_coordinates": [
+        [
+          70.97,
+          32.61
+        ],
+        [
+          76.06,
+          32.61
+        ],
+        [
+          76.06,
+          41.17
+        ],
+        [
+          70.97,
+          41.17
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_power_house",
+      "building_id": null,
+      "structure_name": "Small block south of Eng'g Bldg. 1 (plan)",
+      "footprint_coordinates": [
+        [
+          38.77,
+          48.51
+        ],
+        [
+          43.01,
+          48.51
+        ],
+        [
+          43.01,
+          51.09
+        ],
+        [
+          38.77,
+          51.09
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_tmft",
+      "building_id": null,
+      "structure_name": "TMFT / power house labels beside Eng'g Bldg. 1 (plan)",
+      "footprint_coordinates": [
+        [
+          54.45,
+          42.66
+        ],
+        [
+          56.57,
+          42.66
+        ],
+        [
+          56.57,
+          47.15
+        ],
+        [
+          54.45,
+          47.15
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_small_n",
+      "building_id": null,
+      "structure_name": "Small structure north-west of Eng'g Bldg. 1 (plan)",
+      "footprint_coordinates": [
+        [
+          38.98,
+          32.81
+        ],
+        [
+          40.89,
+          32.81
+        ],
+        [
+          40.89,
+          33.76
+        ],
+        [
+          38.98,
+          33.76
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    },
+    {
+      "footprint_id": "fp_struct_guard",
+      "building_id": null,
+      "structure_name": "Guard house beside the Main Gate (plan)",
+      "footprint_coordinates": [
+        [
+          20.87,
+          74.52
+        ],
+        [
+          22.46,
+          74.52
+        ],
+        [
+          22.46,
+          75.88
+        ],
+        [
+          20.87,
+          75.88
+        ]
+      ],
+      "verification_status": "traced_from_plan",
+      "source_image": "annotated_campus_map.png",
+      "is_obstacle": true
+    }
+  ]
+}
